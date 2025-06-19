@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inka's Portofolio Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css\style.css" />
+</head>
+
+<body>
+  <div class="container" id="mainContainer"> <!-- Container untuk HALAMAN LOGIN dan HALAMAN UTAMA -->
+    <!--=============== LOGIN SECTION ===============-->
+    <section class="section login-section" id="mainContainer">
+      <div class="login-box">
+        <h2>Let me know yourself</h2>
+        <form onsubmit="handleLogin(event)">
+          <input type="text" id="your-name" required placeholder="Please enter your name here" />
+          <button type="submit">Entering to Web</button>
+        </form>
+      </div>
+    </section>
+
+    <!--=============== MAIN SECTION ===============-->
+    <section class="section main-section">
+      <!--=============== HEADER ===============-->
+      <header class="msHeader hidden">
+        <nav class="navigasiMenu">
+          <li class="nav_item">
+            <a href="#home" class="nav_link active">HOME</a>
+          </li>
+          <li class="nav_item">
+            <a href="#profil" class="nav_link">PROFILE</a>
+          </li>
+          <li class="nav_item">
+            <a href="#project" class="nav_link">ACHIEVEMENT</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">CONTACT</a>
+          </li>
+        </nav>
+      </header>
+
+      <!--=============== MAIN ===============-->
+      <main class="msMain">
+        <!--========== HOME ==========-->
+        <section class="home" id="home">
+          <div class="home-banner">
+            <div class="slider-banner">
+              <img src="assets\banner1.jpg" alt="">
+              <img src="assets\banner2.jpg" alt="">
+              <img src="assets\banner3.jpg" alt="">
+              <img src="assets\banner4.jpg" alt="">
+              <img src="assets\banner5.jpg" alt="">
+              <img src="assets\banner6.jpg" alt="">
+              <img src="assets\banner7.jpg" alt="">
+              <img src="assets\banner8.jpg" alt="">
+              <img src="assets\banner9.jpg" alt="">
+              <img src="assets\banner10.jpg" alt="">
+              <img src="assets\banner11.jpg" alt="">
+              <!-- duplikasi untuk loop seamless -->
+              <img src="assets\banner1.jpg" alt="">
+              <img src="assets\banner2.jpg" alt="">
+              <img src="assets\banner3.jpg" alt="">
+              <img src="assets\banner4.jpg" alt="">
+              <img src="assets\banner5.jpg" alt="">
+              <img src="assets\banner6.jpg" alt="">
+              <img src="assets\banner7.jpg" alt="">
+              <img src="assets\banner8.jpg" alt="">
+              <img src="assets\banner9.jpg" alt="">
+              <img src="assets\banner10.jpg" alt="">
+              <img src="assets\banner11.jpg" alt="">
+            </div>
+          </div>
+          <div class="home-intro">
+            <h1 class="home-title">Hi, <span id="username">Guest</span></h1>
+            <h2>I am <span>Inka Falya Matin</span></h2>
+            <P>a junior web designer who's passionate on Frontend Developer.</P>
+            <P>Welcome to my portofolio website.</P>
+          </div>
+        </section>
+
+        <!--========== PROFIL ==========-->
+        <section class="sectionM profil" id="profil">
+          <div class="subProfil">
+            <h2 class="section-title">Profil</h2>
+            <p class="about">
+              I'm a freshgraduate who's passionate about starting a career in the field of information technology.
+              During my studies, I was accustomed to completing assignments well.
+              I have internship experience at the East Java Provincial Education Office as an IT Helper,
+              responsible for designing the system modeling structure of a web-based application that 
+              improves the efficiency of business trip cost data collection.
+              I am a structured individual, possess good communication skills, and have attention to detail.
+              I am committed to continuous learning and ready to contribute my best in a dynamic and
+              collaborative work environment.
+            </p>
+          </div>
+
+          <div class="subSkill">
+            <h2 class="section-title">Professional Skills</h2>
+            <div class="skill-container">
+
+              <div class="skill-card HTML">
+                <img class="skill-logo" src="assets\logo-HTML.png" alt="" />
+                <h3>HTML</h3>
+              </div>
+              <div class="skill-card CSS">
+                <img class="skill-logo" src="assets\logo-CSS.png" alt="" />
+                <h3>CSS</h3>
+              </div>
+              <div class="skill-card JS">
+                <img class="skill-logo" src="assets\logo-JS.png" alt="" />
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skill-card Figma">
+                <img class="skill-logo" src="assets\logo-Figma.png" alt="" />
+                <h3>Figma</h3>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!--========== ACHIEVEMENT ==========-->
+        <section class="sectionM achievement" id="project">
+          <h2 class="section-title">Achievement</h2>
+          <div class="project-container">
+            <div class="project-card">
+              <img class="project-img" src="assets\project1.png" alt="" />
+              <h3>Simpenas Website</h3>
+              <p class="project-subtitle">Building an UI/UX Design by CodeIgniter Framework</p>
+            </div>
+
+            <div class="project-card">
+              <img class="project-img" src="assets\project2.png" alt="" />
+              <h3>RO-ting Mobile</h3>
+              <p class="project-subtitle">Creating a mobile application for students</p>
+            </div>
+
+            <div class="project-card">
+              <img class="project-img" src="assets\project3.png" alt="" />
+              <h3>Eduline Web LMS</h3>
+              <p class="project-subtitle">Building a learning management system for students</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!--========== CONTACT ==========-->
+        <section class="sectionM contact" id="contact">
+          <h2 class="section-title">Contact</h2>
+          <h3>Send Me a Message</h3>
+          <div class="form-wrapper">
+            <form class="contact-form" id="contact">
+              <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" cols="10" required placeholder="Please fill your name" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" cols="10" required placeholder="Please fill your email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="organization">Organization :</label>
+                <input type="text" cols="10" required placeholder="Please fill your organization" id="organization">
+              </div>
+              <div class="form-group">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" id="dob" name="dob" cols="10" required>
+              </div>
+              <div class="form-group gender">
+                <label>Gender :</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+              </div>
+              <div class="form-group message">
+                <textarea rows="8" cols="10" required placeholder="Your message here..."></textarea>
+              </div>
+              <button type="submit" class="contactBtn" id="send">Send</button>
+            </form>
+
+            <div class="preview-box">
+              <textarea id="output" cols="60" rows="21" readonly></textarea>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <!--=============== FOOTER ===============-->
+      <footer class="footer">
+        <p>&copy; 2025 Inka Falya Matin</p>
+          <p>All rights reserved.</p>
+      </footer>
+
+    </section>
+  </div>
+
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="js\script.js"></script>
+</body>
+
+</html>
